@@ -1,0 +1,2171 @@
+generator: gg 1.0.0-pre
+imports:
+- name: github.com/Masterminds/semver
+  root: github.com/Masterminds/semver
+  repo: https://github.com/Masterminds/semver.git
+  version: c7af12943936e8c39859482e61f0574c2fd7fc75
+  revision: 1.4.2
+  ref: tags/v1.4.2
+  time: 2018-04-10T16:43:47-04:00
+  changelog: b888e20abaa5a18e0198cc501d61aedd8f2972d1
+  noRequirements: true
+  exports:
+  - github.com/Masterminds/semver
+  testImports:
+    github.com/Masterminds/semver:
+    - github.com/Masterminds/semver
+- name: github.com/RyanCarrier/dijkstra
+  root: github.com/RyanCarrier/dijkstra
+  repo: https://github.com/RyanCarrier/dijkstra.git
+  version: 3fe1cac162897238b8054aaa97fe113c500664ad
+  ref: heads/master
+  time: 2018-09-29T08:41:45+10:00
+  noRequirements: true
+  exports:
+  - github.com/RyanCarrier/dijkstra
+  - github.com/RyanCarrier/dijkstra/max
+  testImports:
+    github.com/RyanCarrier/dijkstra:
+    - github.com/RyanCarrier/dijkstra-1
+    - github.com/albertorestifo/dijkstra
+    - github.com/mattomatic/dijkstra/dijkstra
+    - github.com/mattomatic/dijkstra/graph
+- name: github.com/chzyer/readline
+  root: github.com/chzyer/readline
+  repo: https://github.com/chzyer/readline.git
+  version: 62c6fe6193755f722b8b8788aa7357be55a50ff1
+  revision: 1.4.0
+  ref: tags/v1.4
+  time: 2016-07-26T21:51:17+08:00
+  changelog: 5c1811a7fd45689261298b048a2cfc22cdb230be
+  noRequirements: true
+  commands:
+  - github.com/chzyer/readline/example/readline-demo
+  - github.com/chzyer/readline/example/readline-im
+  - github.com/chzyer/readline/example/readline-multiline
+  - github.com/chzyer/readline/example/readline-pass-strength
+  - github.com/chzyer/readline/example/readline-remote/readline-remote-client
+  - github.com/chzyer/readline/example/readline-remote/readline-remote-server
+  exports:
+  - github.com/chzyer/readline
+  - github.com/chzyer/readline/runes
+  imports:
+    github.com/chzyer/readline/example/readline-demo:
+    - github.com/chzyer/readline
+    github.com/chzyer/readline/example/readline-im:
+    - github.com/chzyer/readline
+    github.com/chzyer/readline/example/readline-multiline:
+    - github.com/chzyer/readline
+    github.com/chzyer/readline/example/readline-pass-strength:
+    - github.com/chzyer/readline
+    - github.com/nbutton23/zxcvbn-go
+    github.com/chzyer/readline/example/readline-remote/readline-remote-client:
+    - github.com/chzyer/readline
+    github.com/chzyer/readline/example/readline-remote/readline-remote-server:
+    - github.com/chzyer/readline
+  testImports:
+    github.com/chzyer/readline:
+    - github.com/chzyer/test
+- name: github.com/google/shlex
+  root: github.com/google/shlex
+  repo: https://github.com/google/shlex.git
+  version: 6f45313302b9c56850fc17f99e40caebce98c716
+  ref: heads/master
+  time: 2015-01-27T13:39:51Z
+  noRequirements: true
+  exports:
+  - github.com/google/shlex
+- name: go.uber.org/atomic
+  root: github.com/uber-go/atomic
+  repo: https://github.com/uber-go/atomic
+  version: 3b8db5e93c4c02efbc313e17b2e796b0914a01fb
+  revision: 1.1.0
+  ref: tags/v1.1.0
+  time: 2016-12-15T11:56:52-08:00
+  glidelock: 3c72c59976da170acd127911ef2cdb67187e0595
+  exports:
+  - go.uber.org/atomic
+  testImports:
+    go.uber.org/atomic:
+    - github.com/stretchr/testify/require
+    - go.uber.org/atomic
+- name: go.uber.org/multierr
+  root: github.com/uber-go/multierr
+  repo: https://github.com/uber-go/multierr
+  version: 3c4937480c32f4c13a875a1829af76c98ca3d40a
+  revision: 1.1.0
+  ref: tags/v1.1.0
+  time: 2017-06-30T10:54:37-07:00
+  changelog: 898445d06325e0e6e65a8d9441d58fa964366f68
+  glidelock: f9ea94c33487d7f810886a93500b16e0ac5b0778
+  requirements:
+  - name: go.uber.org/atomic
+    root: github.com/uber-go/atomic
+    repo: https://github.com/uber-go/atomic
+    version: 3b8db5e93c4c02efbc313e17b2e796b0914a01fb
+    revision: 1.1.0
+    ref: tags/v1.1.0
+    time: 2016-12-15T11:56:52-08:00
+  exports:
+  - go.uber.org/multierr
+  imports:
+    go.uber.org/multierr:
+    - go.uber.org/atomic
+  testImports:
+    go.uber.org/multierr:
+    - github.com/stretchr/testify/assert
+    - github.com/stretchr/testify/require
+    - go.uber.org/multierr
+testImports:
+- name: github.com/davecgh/go-spew
+  root: github.com/davecgh/go-spew
+  repo: https://github.com/davecgh/go-spew.git
+  version: 346938d642f2ec3594ed81d874461961cd0faa76
+  revision: 1.1.0
+  ref: tags/v1.1.0
+  time: 2016-10-29T15:57:26-05:00
+  noRequirements: true
+  exports:
+  - github.com/davecgh/go-spew/spew
+  testImports:
+    github.com/davecgh/go-spew/spew:
+    - github.com/davecgh/go-spew/spew
+    - github.com/davecgh/go-spew/spew/testdata
+- name: github.com/emirpasic/gods
+  root: github.com/emirpasic/gods
+  repo: https://github.com/emirpasic/gods.git
+  version: 1615341f118ae12f353cc8a983f35b584342c9b3
+  revision: 1.12.0
+  ref: tags/v1.12.0
+  time: 2018-09-23T01:35:52+02:00
+  noRequirements: true
+  commands:
+  - github.com/emirpasic/gods/examples/arraylist
+  - github.com/emirpasic/gods/examples/arraystack
+  - github.com/emirpasic/gods/examples/avltree
+  - github.com/emirpasic/gods/examples/binaryheap
+  - github.com/emirpasic/gods/examples/btree
+  - github.com/emirpasic/gods/examples/customcomparator
+  - github.com/emirpasic/gods/examples/doublylinkedlist
+  - github.com/emirpasic/gods/examples/enumerablewithindex
+  - github.com/emirpasic/gods/examples/enumerablewithkey
+  - github.com/emirpasic/gods/examples/hashbidimap
+  - github.com/emirpasic/gods/examples/hashmap
+  - github.com/emirpasic/gods/examples/hashset
+  - github.com/emirpasic/gods/examples/iteratorwithindex
+  - github.com/emirpasic/gods/examples/iteratorwithkey
+  - github.com/emirpasic/gods/examples/linkedhashmap
+  - github.com/emirpasic/gods/examples/linkedhashset
+  - github.com/emirpasic/gods/examples/linkedliststack
+  - github.com/emirpasic/gods/examples/redblacktree
+  - github.com/emirpasic/gods/examples/singlylinkedlist
+  - github.com/emirpasic/gods/examples/sort
+  - github.com/emirpasic/gods/examples/treebidimap
+  - github.com/emirpasic/gods/examples/treemap
+  - github.com/emirpasic/gods/examples/treeset
+  exports:
+  - github.com/emirpasic/gods/containers
+  - github.com/emirpasic/gods/examples/redblacktreeextended
+  - github.com/emirpasic/gods/examples/serialization
+  - github.com/emirpasic/gods/lists
+  - github.com/emirpasic/gods/lists/arraylist
+  - github.com/emirpasic/gods/lists/doublylinkedlist
+  - github.com/emirpasic/gods/lists/singlylinkedlist
+  - github.com/emirpasic/gods/maps
+  - github.com/emirpasic/gods/maps/hashbidimap
+  - github.com/emirpasic/gods/maps/hashmap
+  - github.com/emirpasic/gods/maps/linkedhashmap
+  - github.com/emirpasic/gods/maps/treebidimap
+  - github.com/emirpasic/gods/maps/treemap
+  - github.com/emirpasic/gods/sets
+  - github.com/emirpasic/gods/sets/hashset
+  - github.com/emirpasic/gods/sets/linkedhashset
+  - github.com/emirpasic/gods/sets/treeset
+  - github.com/emirpasic/gods/stacks
+  - github.com/emirpasic/gods/stacks/arraystack
+  - github.com/emirpasic/gods/stacks/linkedliststack
+  - github.com/emirpasic/gods/trees
+  - github.com/emirpasic/gods/trees/avltree
+  - github.com/emirpasic/gods/trees/binaryheap
+  - github.com/emirpasic/gods/trees/btree
+  - github.com/emirpasic/gods/trees/redblacktree
+  - github.com/emirpasic/gods/utils
+  imports:
+    github.com/emirpasic/gods/containers:
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/examples/arraylist:
+    - github.com/emirpasic/gods/lists/arraylist
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/examples/arraystack:
+    - github.com/emirpasic/gods/stacks/arraystack
+    github.com/emirpasic/gods/examples/avltree:
+    - github.com/emirpasic/gods/trees/avltree
+    github.com/emirpasic/gods/examples/binaryheap:
+    - github.com/emirpasic/gods/trees/binaryheap
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/examples/btree:
+    - github.com/emirpasic/gods/trees/btree
+    github.com/emirpasic/gods/examples/customcomparator:
+    - github.com/emirpasic/gods/sets/treeset
+    github.com/emirpasic/gods/examples/doublylinkedlist:
+    - github.com/emirpasic/gods/lists/doublylinkedlist
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/examples/enumerablewithindex:
+    - github.com/emirpasic/gods/sets/treeset
+    github.com/emirpasic/gods/examples/enumerablewithkey:
+    - github.com/emirpasic/gods/maps/treemap
+    github.com/emirpasic/gods/examples/hashbidimap:
+    - github.com/emirpasic/gods/maps/hashbidimap
+    github.com/emirpasic/gods/examples/hashmap:
+    - github.com/emirpasic/gods/maps/hashmap
+    github.com/emirpasic/gods/examples/hashset:
+    - github.com/emirpasic/gods/sets/hashset
+    github.com/emirpasic/gods/examples/iteratorwithindex:
+    - github.com/emirpasic/gods/sets/treeset
+    github.com/emirpasic/gods/examples/iteratorwithkey:
+    - github.com/emirpasic/gods/maps/treemap
+    github.com/emirpasic/gods/examples/linkedhashmap:
+    - github.com/emirpasic/gods/maps/linkedhashmap
+    github.com/emirpasic/gods/examples/linkedhashset:
+    - github.com/emirpasic/gods/sets/linkedhashset
+    github.com/emirpasic/gods/examples/linkedliststack:
+    - github.com/emirpasic/gods/stacks/linkedliststack
+    github.com/emirpasic/gods/examples/redblacktree:
+    - github.com/emirpasic/gods/trees/redblacktree
+    github.com/emirpasic/gods/examples/redblacktreeextended:
+    - github.com/emirpasic/gods/trees/redblacktree
+    github.com/emirpasic/gods/examples/serialization:
+    - github.com/emirpasic/gods/lists/arraylist
+    - github.com/emirpasic/gods/maps/hashmap
+    github.com/emirpasic/gods/examples/singlylinkedlist:
+    - github.com/emirpasic/gods/lists/singlylinkedlist
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/examples/sort:
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/examples/treebidimap:
+    - github.com/emirpasic/gods/maps/treebidimap
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/examples/treemap:
+    - github.com/emirpasic/gods/maps/treemap
+    github.com/emirpasic/gods/examples/treeset:
+    - github.com/emirpasic/gods/sets/treeset
+    github.com/emirpasic/gods/lists:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/lists/arraylist:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/lists
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/lists/doublylinkedlist:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/lists
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/lists/singlylinkedlist:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/lists
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/maps:
+    - github.com/emirpasic/gods/containers
+    github.com/emirpasic/gods/maps/hashbidimap:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/maps
+    - github.com/emirpasic/gods/maps/hashmap
+    github.com/emirpasic/gods/maps/hashmap:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/maps
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/maps/linkedhashmap:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/lists/doublylinkedlist
+    - github.com/emirpasic/gods/maps
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/maps/treebidimap:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/maps
+    - github.com/emirpasic/gods/trees/redblacktree
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/maps/treemap:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/maps
+    - github.com/emirpasic/gods/trees/redblacktree
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/sets:
+    - github.com/emirpasic/gods/containers
+    github.com/emirpasic/gods/sets/hashset:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/sets
+    github.com/emirpasic/gods/sets/linkedhashset:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/lists/doublylinkedlist
+    - github.com/emirpasic/gods/sets
+    github.com/emirpasic/gods/sets/treeset:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/sets
+    - github.com/emirpasic/gods/trees/redblacktree
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/stacks:
+    - github.com/emirpasic/gods/containers
+    github.com/emirpasic/gods/stacks/arraystack:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/lists/arraylist
+    - github.com/emirpasic/gods/stacks
+    github.com/emirpasic/gods/stacks/linkedliststack:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/lists/singlylinkedlist
+    - github.com/emirpasic/gods/stacks
+    github.com/emirpasic/gods/trees:
+    - github.com/emirpasic/gods/containers
+    github.com/emirpasic/gods/trees/avltree:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/trees
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/trees/binaryheap:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/lists/arraylist
+    - github.com/emirpasic/gods/trees
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/trees/btree:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/trees
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/trees/redblacktree:
+    - github.com/emirpasic/gods/containers
+    - github.com/emirpasic/gods/trees
+    - github.com/emirpasic/gods/utils
+  testImports:
+    github.com/emirpasic/gods/containers:
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/lists/arraylist:
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/lists/doublylinkedlist:
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/lists/singlylinkedlist:
+    - github.com/emirpasic/gods/utils
+    github.com/emirpasic/gods/maps/treebidimap:
+    - github.com/emirpasic/gods/utils
+- name: github.com/jbenet/go-context
+  root: github.com/jbenet/go-context
+  repo: https://github.com/jbenet/go-context.git
+  version: d14ea06fba99483203c19d92cfcd13ebe73135f4
+  ref: heads/master
+  time: 2015-07-10T17:45:18-07:00
+  noRequirements: true
+  exports:
+  - github.com/jbenet/go-context
+  - github.com/jbenet/go-context/dag
+  - github.com/jbenet/go-context/frac
+  - github.com/jbenet/go-context/io
+  imports:
+    github.com/jbenet/go-context/dag:
+    - golang.org/x/net/context
+    github.com/jbenet/go-context/frac:
+    - golang.org/x/net/context
+    github.com/jbenet/go-context/io:
+    - golang.org/x/net/context
+  testImports:
+    github.com/jbenet/go-context/dag:
+    - golang.org/x/net/context
+    github.com/jbenet/go-context/frac:
+    - golang.org/x/net/context
+    github.com/jbenet/go-context/io:
+    - golang.org/x/net/context
+- name: github.com/kevinburke/ssh_config
+  root: github.com/kevinburke/ssh_config
+  repo: https://github.com/kevinburke/ssh_config.git
+  version: 81db2a75821ed34e682567d48be488a1c3121088
+  revision: 0.5.0
+  ref: tags/0.5
+  time: 2018-08-30T14:53:28-06:00
+  noRequirements: true
+  exports:
+  - github.com/kevinburke/ssh_config
+  imports:
+    github.com/kevinburke/ssh_config:
+    - github.com/pelletier/go-buffruneio
+  testImports:
+    github.com/kevinburke/ssh_config:
+    - github.com/kevinburke/ssh_config
+- name: github.com/mitchellh/go-homedir
+  root: github.com/mitchellh/go-homedir
+  repo: https://github.com/mitchellh/go-homedir.git
+  version: ae18d6b8b3205b561c79e8e5f69bff09736185f4
+  revision: 1.0.0
+  ref: tags/v1.0.0
+  time: 2018-08-23T17:42:36-07:00
+  noRequirements: true
+  exports:
+  - github.com/mitchellh/go-homedir
+- name: github.com/pelletier/go-buffruneio
+  root: github.com/pelletier/go-buffruneio
+  repo: https://github.com/pelletier/go-buffruneio.git
+  version: c37440a7cf42ac63b919c752ca73a85067e05992
+  revision: 0.2.0
+  ref: tags/v0.2.0
+  time: 2017-02-27T14:03:11-08:00
+  noRequirements: true
+  exports:
+  - github.com/pelletier/go-buffruneio
+- name: github.com/pmezard/go-difflib
+  root: github.com/pmezard/go-difflib
+  repo: https://github.com/pmezard/go-difflib.git
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
+  revision: 1.0.0
+  ref: tags/v1.0.0
+  time: 2016-01-10T11:55:54+01:00
+  noRequirements: true
+  exports:
+  - github.com/pmezard/go-difflib/difflib
+- name: github.com/sergi/go-diff
+  root: github.com/sergi/go-diff
+  repo: https://github.com/sergi/go-diff.git
+  version: 1744e2970ca51c86172c8190fadad617561ed6e7
+  revision: 1.0.0
+  ref: tags/v1.0.0
+  time: 2017-11-10T12:01:46+01:00
+  noRequirements: true
+  exports:
+  - github.com/sergi/go-diff/diffmatchpatch
+  testImports:
+    github.com/sergi/go-diff/diffmatchpatch:
+    - github.com/stretchr/testify/assert
+- name: github.com/src-d/gcfg
+  root: github.com/src-d/gcfg
+  repo: https://github.com/src-d/gcfg.git
+  version: f187355171c936ac84a82793659ebb4936bc1c23
+  revision: 1.3.0
+  ref: tags/v1.3.0
+  time: 2016-10-26T12:01:55+02:00
+  noRequirements: true
+  exports:
+  - github.com/src-d/gcfg
+  - github.com/src-d/gcfg/scanner
+  - github.com/src-d/gcfg/token
+  - github.com/src-d/gcfg/types
+  imports:
+    github.com/src-d/gcfg:
+    - github.com/src-d/gcfg/scanner
+    - github.com/src-d/gcfg/token
+    - github.com/src-d/gcfg/types
+    - gopkg.in/warnings.v0
+    github.com/src-d/gcfg/scanner:
+    - github.com/src-d/gcfg/token
+  testImports:
+    github.com/src-d/gcfg:
+    - github.com/pkg/errors
+    - github.com/src-d/gcfg
+    github.com/src-d/gcfg/scanner:
+    - github.com/src-d/gcfg/scanner
+    - github.com/src-d/gcfg/token
+- name: github.com/stretchr/objx
+  root: github.com/stretchr/objx
+  repo: https://github.com/stretchr/objx.git
+  version: facf9a85c22f48d2f52f2380e4efce1768749a89
+  revision: 0.1.0
+  ref: tags/v0.1
+  time: 2018-01-06T02:13:53+01:00
+  requirements:
+  - name: github.com/stretchr/testify
+    root: github.com/stretchr/testify
+    repo: https://github.com/stretchr/testify.git
+    version: b91bfb9ebec76498946beb6af7c0230c7cc7ba6c
+    revision: 1.2.0
+    ref: tags/v1.2.0
+    time: 2017-12-30T19:17:37+01:00
+  exports:
+  - github.com/stretchr/objx
+  testImports:
+    github.com/stretchr/objx:
+    - github.com/stretchr/testify/assert
+- name: github.com/stretchr/testify
+  root: github.com/stretchr/testify
+  repo: https://github.com/stretchr/testify.git
+  version: f35b8ab0b5a2cef36673838d662e249dd9c94686
+  revision: 1.2.2
+  ref: tags/v1.2.2
+  time: 2018-06-09T12:55:18+01:00
+  commands:
+  - github.com/stretchr/testify/_codegen
+  exports:
+  - github.com/stretchr/testify
+  - github.com/stretchr/testify/assert
+  - github.com/stretchr/testify/http
+  - github.com/stretchr/testify/mock
+  - github.com/stretchr/testify/require
+  - github.com/stretchr/testify/suite
+  imports:
+    github.com/stretchr/testify:
+    - github.com/stretchr/testify/assert
+    - github.com/stretchr/testify/http
+    - github.com/stretchr/testify/mock
+    github.com/stretchr/testify/_codegen:
+    - github.com/ernesto-jimenez/gogen/imports
+    github.com/stretchr/testify/assert:
+    - github.com/davecgh/go-spew/spew
+    - github.com/pmezard/go-difflib/difflib
+    github.com/stretchr/testify/http:
+    - github.com/stretchr/testify/mock
+    github.com/stretchr/testify/mock:
+    - github.com/davecgh/go-spew/spew
+    - github.com/pmezard/go-difflib/difflib
+    - github.com/stretchr/objx
+    - github.com/stretchr/testify/assert
+    github.com/stretchr/testify/require:
+    - github.com/stretchr/testify/assert
+    github.com/stretchr/testify/suite:
+    - github.com/stretchr/testify/assert
+    - github.com/stretchr/testify/require
+  testImports:
+    github.com/stretchr/testify:
+    - github.com/stretchr/testify/assert
+    github.com/stretchr/testify/mock:
+    - github.com/stretchr/testify/assert
+    - github.com/stretchr/testify/require
+    github.com/stretchr/testify/suite:
+    - github.com/stretchr/testify/assert
+    - github.com/stretchr/testify/require
+- name: github.com/xanzy/ssh-agent
+  root: github.com/xanzy/ssh-agent
+  repo: https://github.com/xanzy/ssh-agent.git
+  version: 640f0ab560aeb89d523bb6ac322b1244d5c3796c
+  revision: 0.2.0
+  ref: tags/v0.2.0
+  time: 2018-07-03T20:17:07+02:00
+  noRequirements: true
+  exports:
+  - github.com/xanzy/ssh-agent
+  imports:
+    github.com/xanzy/ssh-agent:
+    - golang.org/x/crypto/ssh/agent
+- name: golang.org/x/crypto
+  root: go.googlesource.com/crypto
+  repo: https://go.googlesource.com/crypto
+  version: 5295e8364332db77d75fce11f1d19c053919a9c9
+  ref: heads/master
+  time: 2018-09-27T16:59:25Z
+  noRequirements: true
+  exports:
+  - golang.org/x/crypto/acme
+  - golang.org/x/crypto/acme/autocert
+  - golang.org/x/crypto/acme/autocert/internal/acmetest
+  - golang.org/x/crypto/argon2
+  - golang.org/x/crypto/bcrypt
+  - golang.org/x/crypto/blake2b
+  - golang.org/x/crypto/blake2s
+  - golang.org/x/crypto/blowfish
+  - golang.org/x/crypto/bn256
+  - golang.org/x/crypto/cast5
+  - golang.org/x/crypto/chacha20poly1305
+  - golang.org/x/crypto/cryptobyte
+  - golang.org/x/crypto/cryptobyte/asn1
+  - golang.org/x/crypto/curve25519
+  - golang.org/x/crypto/ed25519
+  - golang.org/x/crypto/ed25519/internal/edwards25519
+  - golang.org/x/crypto/hkdf
+  - golang.org/x/crypto/internal/chacha20
+  - golang.org/x/crypto/internal/subtle
+  - golang.org/x/crypto/md4
+  - golang.org/x/crypto/nacl/auth
+  - golang.org/x/crypto/nacl/box
+  - golang.org/x/crypto/nacl/secretbox
+  - golang.org/x/crypto/nacl/sign
+  - golang.org/x/crypto/ocsp
+  - golang.org/x/crypto/openpgp
+  - golang.org/x/crypto/openpgp/armor
+  - golang.org/x/crypto/openpgp/clearsign
+  - golang.org/x/crypto/openpgp/elgamal
+  - golang.org/x/crypto/openpgp/errors
+  - golang.org/x/crypto/openpgp/packet
+  - golang.org/x/crypto/openpgp/s2k
+  - golang.org/x/crypto/otr
+  - golang.org/x/crypto/pbkdf2
+  - golang.org/x/crypto/pkcs12
+  - golang.org/x/crypto/pkcs12/internal/rc2
+  - golang.org/x/crypto/poly1305
+  - golang.org/x/crypto/ripemd160
+  - golang.org/x/crypto/salsa20
+  - golang.org/x/crypto/salsa20/salsa
+  - golang.org/x/crypto/scrypt
+  - golang.org/x/crypto/sha3
+  - golang.org/x/crypto/ssh
+  - golang.org/x/crypto/ssh/agent
+  - golang.org/x/crypto/ssh/knownhosts
+  - golang.org/x/crypto/ssh/terminal
+  - golang.org/x/crypto/ssh/test
+  - golang.org/x/crypto/tea
+  - golang.org/x/crypto/twofish
+  - golang.org/x/crypto/xtea
+  - golang.org/x/crypto/xts
+  imports:
+    golang.org/x/crypto/acme/autocert:
+    - golang.org/x/crypto/acme
+    golang.org/x/crypto/argon2:
+    - golang.org/x/crypto/blake2b
+    - golang.org/x/sys/cpu
+    golang.org/x/crypto/bcrypt:
+    - golang.org/x/crypto/blowfish
+    golang.org/x/crypto/blake2b:
+    - golang.org/x/sys/cpu
+    golang.org/x/crypto/blake2s:
+    - golang.org/x/sys/cpu
+    golang.org/x/crypto/chacha20poly1305:
+    - golang.org/x/crypto/internal/chacha20
+    - golang.org/x/crypto/internal/subtle
+    - golang.org/x/crypto/poly1305
+    - golang.org/x/sys/cpu
+    golang.org/x/crypto/cryptobyte:
+    - golang.org/x/crypto/cryptobyte/asn1
+    golang.org/x/crypto/ed25519:
+    - golang.org/x/crypto/ed25519/internal/edwards25519
+    golang.org/x/crypto/internal/chacha20:
+    - golang.org/x/crypto/internal/subtle
+    golang.org/x/crypto/nacl/box:
+    - golang.org/x/crypto/curve25519
+    - golang.org/x/crypto/nacl/secretbox
+    - golang.org/x/crypto/salsa20/salsa
+    golang.org/x/crypto/nacl/secretbox:
+    - golang.org/x/crypto/internal/subtle
+    - golang.org/x/crypto/poly1305
+    - golang.org/x/crypto/salsa20/salsa
+    golang.org/x/crypto/nacl/sign:
+    - golang.org/x/crypto/ed25519
+    - golang.org/x/crypto/internal/subtle
+    golang.org/x/crypto/openpgp:
+    - golang.org/x/crypto/openpgp/armor
+    - golang.org/x/crypto/openpgp/errors
+    - golang.org/x/crypto/openpgp/packet
+    - golang.org/x/crypto/openpgp/s2k
+    golang.org/x/crypto/openpgp/armor:
+    - golang.org/x/crypto/openpgp/errors
+    golang.org/x/crypto/openpgp/clearsign:
+    - golang.org/x/crypto/openpgp/armor
+    - golang.org/x/crypto/openpgp/errors
+    - golang.org/x/crypto/openpgp/packet
+    golang.org/x/crypto/openpgp/packet:
+    - golang.org/x/crypto/cast5
+    - golang.org/x/crypto/openpgp/elgamal
+    - golang.org/x/crypto/openpgp/errors
+    - golang.org/x/crypto/openpgp/s2k
+    golang.org/x/crypto/openpgp/s2k:
+    - golang.org/x/crypto/openpgp/errors
+    golang.org/x/crypto/pkcs12:
+    - golang.org/x/crypto/pkcs12/internal/rc2
+    golang.org/x/crypto/salsa20:
+    - golang.org/x/crypto/internal/subtle
+    - golang.org/x/crypto/salsa20/salsa
+    golang.org/x/crypto/scrypt:
+    - golang.org/x/crypto/pbkdf2
+    golang.org/x/crypto/ssh:
+    - golang.org/x/crypto/curve25519
+    - golang.org/x/crypto/ed25519
+    - golang.org/x/crypto/internal/chacha20
+    - golang.org/x/crypto/poly1305
+    golang.org/x/crypto/ssh/agent:
+    - golang.org/x/crypto/ed25519
+    - golang.org/x/crypto/ssh
+    golang.org/x/crypto/ssh/knownhosts:
+    - golang.org/x/crypto/ssh
+    golang.org/x/crypto/ssh/terminal:
+    - golang.org/x/sys/unix
+    - golang.org/x/sys/windows
+    golang.org/x/crypto/xts:
+    - golang.org/x/crypto/internal/subtle
+  testImports:
+    golang.org/x/crypto/acme/autocert:
+    - golang.org/x/crypto/acme
+    - golang.org/x/crypto/acme/autocert
+    - golang.org/x/crypto/acme/autocert/internal/acmetest
+    golang.org/x/crypto/cryptobyte:
+    - golang.org/x/crypto/cryptobyte
+    - golang.org/x/crypto/cryptobyte/asn1
+    golang.org/x/crypto/ed25519:
+    - golang.org/x/crypto/ed25519/internal/edwards25519
+    golang.org/x/crypto/hkdf:
+    - golang.org/x/crypto/hkdf
+    golang.org/x/crypto/internal/subtle:
+    - golang.org/x/crypto/internal/subtle
+    golang.org/x/crypto/md4:
+    - golang.org/x/crypto/md4
+    golang.org/x/crypto/nacl/auth:
+    - golang.org/x/crypto/nacl/auth
+    golang.org/x/crypto/nacl/box:
+    - golang.org/x/crypto/curve25519
+    - golang.org/x/crypto/nacl/box
+    golang.org/x/crypto/nacl/secretbox:
+    - golang.org/x/crypto/nacl/secretbox
+    golang.org/x/crypto/openpgp:
+    - golang.org/x/crypto/openpgp/armor
+    - golang.org/x/crypto/openpgp/errors
+    - golang.org/x/crypto/openpgp/packet
+    golang.org/x/crypto/openpgp/clearsign:
+    - golang.org/x/crypto/openpgp
+    - golang.org/x/crypto/openpgp/packet
+    golang.org/x/crypto/openpgp/packet:
+    - golang.org/x/crypto/openpgp/armor
+    - golang.org/x/crypto/openpgp/errors
+    golang.org/x/crypto/openpgp/s2k:
+    - golang.org/x/crypto/ripemd160
+    golang.org/x/crypto/scrypt:
+    - golang.org/x/crypto/scrypt
+    golang.org/x/crypto/ssh:
+    - golang.org/x/crypto/ed25519
+    - golang.org/x/crypto/ssh
+    - golang.org/x/crypto/ssh/terminal
+    - golang.org/x/crypto/ssh/testdata
+    golang.org/x/crypto/ssh/agent:
+    - golang.org/x/crypto/ssh
+    - golang.org/x/crypto/ssh/agent
+    - golang.org/x/crypto/ssh/testdata
+    golang.org/x/crypto/ssh/knownhosts:
+    - golang.org/x/crypto/ssh
+    golang.org/x/crypto/ssh/test:
+    - golang.org/x/crypto/ssh
+    - golang.org/x/crypto/ssh/agent
+    - golang.org/x/crypto/ssh/testdata
+- name: golang.org/x/net
+  root: go.googlesource.com/net
+  repo: https://go.googlesource.com/net
+  version: 4dfa2610cdf3b287375bbba5b8f2a14d3b01d8de
+  ref: heads/master
+  time: 2018-09-26T15:47:20Z
+  noRequirements: true
+  commands:
+  - golang.org/x/net/html/atom
+  - golang.org/x/net/http2/h2demo
+  - golang.org/x/net/http2/h2i
+  - golang.org/x/net/internal/iana
+  - golang.org/x/net/ipv4
+  - golang.org/x/net/ipv6
+  - golang.org/x/net/publicsuffix
+  - golang.org/x/net/webdav
+  exports:
+  - golang.org/x/net/bpf
+  - golang.org/x/net/context
+  - golang.org/x/net/context/ctxhttp
+  - golang.org/x/net/dict
+  - golang.org/x/net/dns/dnsmessage
+  - golang.org/x/net/html
+  - golang.org/x/net/html/atom
+  - golang.org/x/net/html/charset
+  - golang.org/x/net/http/httpguts
+  - golang.org/x/net/http/httpproxy
+  - golang.org/x/net/http2
+  - golang.org/x/net/http2/h2c
+  - golang.org/x/net/http2/hpack
+  - golang.org/x/net/icmp
+  - golang.org/x/net/idna
+  - golang.org/x/net/internal/iana
+  - golang.org/x/net/internal/nettest
+  - golang.org/x/net/internal/socket
+  - golang.org/x/net/internal/socks
+  - golang.org/x/net/internal/sockstest
+  - golang.org/x/net/internal/timeseries
+  - golang.org/x/net/ipv4
+  - golang.org/x/net/ipv6
+  - golang.org/x/net/lif
+  - golang.org/x/net/nettest
+  - golang.org/x/net/netutil
+  - golang.org/x/net/proxy
+  - golang.org/x/net/publicsuffix
+  - golang.org/x/net/route
+  - golang.org/x/net/trace
+  - golang.org/x/net/webdav
+  - golang.org/x/net/webdav/internal/xml
+  - golang.org/x/net/websocket
+  - golang.org/x/net/xsrftoken
+  imports:
+    golang.org/x/net/context/ctxhttp:
+    - golang.org/x/net/context
+    golang.org/x/net/html:
+    - golang.org/x/net/html/atom
+    golang.org/x/net/html/charset:
+    - golang.org/x/net/html
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/charmap
+    - golang.org/x/text/encoding/htmlindex
+    - golang.org/x/text/transform
+    golang.org/x/net/http/httpguts:
+    - golang.org/x/net/idna
+    golang.org/x/net/http/httpproxy:
+    - golang.org/x/net/idna
+    golang.org/x/net/http2:
+    - golang.org/x/net/http/httpguts
+    - golang.org/x/net/http2/hpack
+    - golang.org/x/net/idna
+    golang.org/x/net/http2/h2c:
+    - golang.org/x/net/http/httpguts
+    - golang.org/x/net/http2
+    - golang.org/x/net/http2/hpack
+    golang.org/x/net/http2/h2demo:
+    - cloud.google.com/go/storage
+    - go4.org/syncutil/singleflight
+    - golang.org/x/build/autocertcache
+    - golang.org/x/crypto/acme/autocert
+    - golang.org/x/net/http2
+    - golang.org/x/oauth2
+    - golang.org/x/oauth2/google
+    - google.golang.org/api/compute/v1
+    golang.org/x/net/http2/h2i:
+    - golang.org/x/crypto/ssh/terminal
+    - golang.org/x/net/http2
+    - golang.org/x/net/http2/hpack
+    golang.org/x/net/icmp:
+    - golang.org/x/net/internal/iana
+    - golang.org/x/net/internal/socket
+    - golang.org/x/net/ipv4
+    - golang.org/x/net/ipv6
+    golang.org/x/net/idna:
+    - golang.org/x/text/secure/bidirule
+    - golang.org/x/text/unicode/bidi
+    - golang.org/x/text/unicode/norm
+    golang.org/x/net/internal/sockstest:
+    - golang.org/x/net/internal/nettest
+    - golang.org/x/net/internal/socks
+    golang.org/x/net/ipv4:
+    - golang.org/x/net/bpf
+    - golang.org/x/net/internal/iana
+    - golang.org/x/net/internal/socket
+    golang.org/x/net/ipv6:
+    - golang.org/x/net/bpf
+    - golang.org/x/net/internal/iana
+    - golang.org/x/net/internal/socket
+    golang.org/x/net/proxy:
+    - golang.org/x/net/internal/socks
+    golang.org/x/net/publicsuffix:
+    - golang.org/x/net/idna
+    golang.org/x/net/trace:
+    - golang.org/x/net/context
+    - golang.org/x/net/internal/timeseries
+    golang.org/x/net/webdav:
+    - golang.org/x/net/context
+    - golang.org/x/net/webdav
+    - golang.org/x/net/webdav/internal/xml
+  testImports:
+    golang.org/x/net/bpf:
+    - golang.org/x/net/bpf
+    - golang.org/x/net/ipv4
+    golang.org/x/net/context:
+    - golang.org/x/net/context
+    golang.org/x/net/context/ctxhttp:
+    - golang.org/x/net/context
+    golang.org/x/net/dns/dnsmessage:
+    - golang.org/x/net/dns/dnsmessage
+    golang.org/x/net/html:
+    - golang.org/x/net/html
+    - golang.org/x/net/html/atom
+    golang.org/x/net/html/charset:
+    - golang.org/x/text/transform
+    golang.org/x/net/http/httpproxy:
+    - golang.org/x/net/http/httpproxy
+    golang.org/x/net/http2:
+    - golang.org/x/net/context
+    - golang.org/x/net/http2/hpack
+    golang.org/x/net/http2/h2c:
+    - golang.org/x/net/http2
+    golang.org/x/net/icmp:
+    - golang.org/x/net/icmp
+    - golang.org/x/net/internal/iana
+    - golang.org/x/net/internal/nettest
+    - golang.org/x/net/internal/socket
+    - golang.org/x/net/ipv4
+    - golang.org/x/net/ipv6
+    golang.org/x/net/idna:
+    - golang.org/x/net/idna
+    golang.org/x/net/internal/socket:
+    - golang.org/x/net/internal/nettest
+    - golang.org/x/net/internal/socket
+    golang.org/x/net/internal/socks:
+    - golang.org/x/net/internal/socks
+    - golang.org/x/net/internal/sockstest
+    golang.org/x/net/internal/sockstest:
+    - golang.org/x/net/internal/socks
+    golang.org/x/net/ipv4:
+    - golang.org/x/net/bpf
+    - golang.org/x/net/icmp
+    - golang.org/x/net/internal/iana
+    - golang.org/x/net/internal/nettest
+    - golang.org/x/net/internal/socket
+    - golang.org/x/net/ipv4
+    golang.org/x/net/ipv6:
+    - golang.org/x/net/bpf
+    - golang.org/x/net/icmp
+    - golang.org/x/net/internal/iana
+    - golang.org/x/net/internal/nettest
+    - golang.org/x/net/ipv6
+    golang.org/x/net/nettest:
+    - golang.org/x/net/internal/nettest
+    golang.org/x/net/netutil:
+    - golang.org/x/net/internal/nettest
+    golang.org/x/net/proxy:
+    - golang.org/x/net/internal/sockstest
+    golang.org/x/net/webdav:
+    - golang.org/x/net/context
+    - golang.org/x/net/webdav/internal/xml
+    golang.org/x/net/websocket:
+    - golang.org/x/net/websocket
+- name: golang.org/x/sys
+  root: go.googlesource.com/sys
+  repo: https://go.googlesource.com/sys
+  version: e4b3c5e9061176387e7cea65e4dc5853801f3fb7
+  ref: heads/master
+  time: 2018-09-28T13:38:29Z
+  noRequirements: true
+  commands:
+  - golang.org/x/sys/unix
+  - golang.org/x/sys/unix/linux
+  - golang.org/x/sys/windows/svc/example
+  exports:
+  - golang.org/x/sys/cpu
+  - golang.org/x/sys/plan9
+  - golang.org/x/sys/unix
+  - golang.org/x/sys/unix/linux
+  - golang.org/x/sys/windows
+  - golang.org/x/sys/windows/registry
+  - golang.org/x/sys/windows/svc
+  - golang.org/x/sys/windows/svc/debug
+  - golang.org/x/sys/windows/svc/eventlog
+  - golang.org/x/sys/windows/svc/mgr
+  imports:
+    golang.org/x/sys/windows/registry:
+    - golang.org/x/sys/windows
+    golang.org/x/sys/windows/svc:
+    - golang.org/x/sys/windows
+    golang.org/x/sys/windows/svc/debug:
+    - golang.org/x/sys/windows/svc
+    golang.org/x/sys/windows/svc/eventlog:
+    - golang.org/x/sys/windows
+    - golang.org/x/sys/windows/registry
+    golang.org/x/sys/windows/svc/example:
+    - golang.org/x/sys/windows/svc
+    - golang.org/x/sys/windows/svc/debug
+    - golang.org/x/sys/windows/svc/eventlog
+    - golang.org/x/sys/windows/svc/mgr
+    golang.org/x/sys/windows/svc/mgr:
+    - golang.org/x/sys/windows
+    - golang.org/x/sys/windows/svc
+  testImports:
+    golang.org/x/sys/cpu:
+    - golang.org/x/sys/cpu
+    golang.org/x/sys/plan9:
+    - golang.org/x/sys/plan9
+    golang.org/x/sys/unix:
+    - golang.org/x/sys/unix
+    golang.org/x/sys/windows:
+    - golang.org/x/sys/windows
+    golang.org/x/sys/windows/registry:
+    - golang.org/x/sys/windows/registry
+    golang.org/x/sys/windows/svc:
+    - golang.org/x/sys/windows/svc
+    - golang.org/x/sys/windows/svc/mgr
+    golang.org/x/sys/windows/svc/eventlog:
+    - golang.org/x/sys/windows/svc/eventlog
+    golang.org/x/sys/windows/svc/mgr:
+    - golang.org/x/sys/windows/svc/mgr
+- name: golang.org/x/text
+  root: go.googlesource.com/text
+  repo: https://go.googlesource.com/text
+  version: f21a4dfb5e38f5895301dc265a8def02365cc3d0
+  revision: 0.3.0
+  ref: tags/v0.3.0
+  time: 2017-12-14T13:08:43Z
+  noRequirements: true
+  commands:
+  - golang.org/x/text
+  - golang.org/x/text/cases
+  - golang.org/x/text/cmd/gotext
+  - golang.org/x/text/cmd/gotext/examples/extract
+  - golang.org/x/text/cmd/gotext/examples/extract_http
+  - golang.org/x/text/cmd/gotext/examples/rewrite
+  - golang.org/x/text/collate
+  - golang.org/x/text/collate/tools/colcmp
+  - golang.org/x/text/currency
+  - golang.org/x/text/date
+  - golang.org/x/text/encoding/charmap
+  - golang.org/x/text/encoding/htmlindex
+  - golang.org/x/text/encoding/ianaindex
+  - golang.org/x/text/encoding/internal/identifier
+  - golang.org/x/text/encoding/japanese
+  - golang.org/x/text/encoding/korean
+  - golang.org/x/text/encoding/simplifiedchinese
+  - golang.org/x/text/encoding/traditionalchinese
+  - golang.org/x/text/feature/plural
+  - golang.org/x/text/internal
+  - golang.org/x/text/internal/export/idna
+  - golang.org/x/text/internal/number
+  - golang.org/x/text/language
+  - golang.org/x/text/language/display
+  - golang.org/x/text/secure/precis
+  - golang.org/x/text/unicode/bidi
+  - golang.org/x/text/unicode/cldr
+  - golang.org/x/text/unicode/norm
+  - golang.org/x/text/unicode/rangetable
+  - golang.org/x/text/unicode/runenames
+  - golang.org/x/text/width
+  exports:
+  - golang.org/x/text
+  - golang.org/x/text/cases
+  - golang.org/x/text/cmd/gotext/examples/extract_http/pkg
+  - golang.org/x/text/collate
+  - golang.org/x/text/collate/build
+  - golang.org/x/text/currency
+  - golang.org/x/text/date
+  - golang.org/x/text/encoding
+  - golang.org/x/text/encoding/charmap
+  - golang.org/x/text/encoding/htmlindex
+  - golang.org/x/text/encoding/ianaindex
+  - golang.org/x/text/encoding/internal
+  - golang.org/x/text/encoding/internal/enctest
+  - golang.org/x/text/encoding/internal/identifier
+  - golang.org/x/text/encoding/japanese
+  - golang.org/x/text/encoding/korean
+  - golang.org/x/text/encoding/simplifiedchinese
+  - golang.org/x/text/encoding/traditionalchinese
+  - golang.org/x/text/encoding/unicode
+  - golang.org/x/text/encoding/unicode/utf32
+  - golang.org/x/text/feature/plural
+  - golang.org/x/text/internal
+  - golang.org/x/text/internal/catmsg
+  - golang.org/x/text/internal/cldrtree
+  - golang.org/x/text/internal/colltab
+  - golang.org/x/text/internal/export/idna
+  - golang.org/x/text/internal/format
+  - golang.org/x/text/internal/gen
+  - golang.org/x/text/internal/number
+  - golang.org/x/text/internal/stringset
+  - golang.org/x/text/internal/tag
+  - golang.org/x/text/internal/testtext
+  - golang.org/x/text/internal/triegen
+  - golang.org/x/text/internal/ucd
+  - golang.org/x/text/internal/utf8internal
+  - golang.org/x/text/language
+  - golang.org/x/text/language/display
+  - golang.org/x/text/message
+  - golang.org/x/text/message/catalog
+  - golang.org/x/text/message/pipeline
+  - golang.org/x/text/number
+  - golang.org/x/text/runes
+  - golang.org/x/text/search
+  - golang.org/x/text/secure
+  - golang.org/x/text/secure/bidirule
+  - golang.org/x/text/secure/precis
+  - golang.org/x/text/transform
+  - golang.org/x/text/unicode
+  - golang.org/x/text/unicode/bidi
+  - golang.org/x/text/unicode/cldr
+  - golang.org/x/text/unicode/norm
+  - golang.org/x/text/unicode/rangetable
+  - golang.org/x/text/unicode/runenames
+  - golang.org/x/text/width
+  imports:
+    golang.org/x/text:
+    - golang.org/x/text/collate
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    golang.org/x/text/cases:
+    - golang.org/x/text/internal
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/triegen
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/language
+    - golang.org/x/text/transform
+    - golang.org/x/text/unicode/norm
+    golang.org/x/text/cmd/gotext:
+    - golang.org/x/text/internal
+    - golang.org/x/text/language
+    - golang.org/x/text/message/pipeline
+    - golang.org/x/tools/go/buildutil
+    - golang.org/x/tools/go/loader
+    golang.org/x/text/cmd/gotext/examples/extract:
+    - golang.org/x/text/language
+    - golang.org/x/text/message
+    - golang.org/x/text/message/catalog
+    golang.org/x/text/cmd/gotext/examples/extract_http:
+    - golang.org/x/text/cmd/gotext/examples/extract_http/pkg
+    golang.org/x/text/cmd/gotext/examples/extract_http/pkg:
+    - golang.org/x/text/language
+    - golang.org/x/text/message
+    golang.org/x/text/cmd/gotext/examples/rewrite:
+    - golang.org/x/text/language
+    - golang.org/x/text/message
+    golang.org/x/text/collate:
+    - golang.org/x/text/collate
+    - golang.org/x/text/collate/build
+    - golang.org/x/text/internal/colltab
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    - golang.org/x/text/unicode/norm
+    golang.org/x/text/collate/build:
+    - golang.org/x/text/internal/colltab
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/norm
+    golang.org/x/text/collate/tools/colcmp:
+    - golang.org/x/text/collate
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/norm
+    golang.org/x/text/currency:
+    - golang.org/x/text/internal
+    - golang.org/x/text/internal/format
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/tag
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/date:
+    - golang.org/x/text/internal/cldrtree
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/encoding:
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/charmap:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/htmlindex:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/charmap
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/encoding/japanese
+    - golang.org/x/text/encoding/korean
+    - golang.org/x/text/encoding/simplifiedchinese
+    - golang.org/x/text/encoding/traditionalchinese
+    - golang.org/x/text/encoding/unicode
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    golang.org/x/text/encoding/ianaindex:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/charmap
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/encoding/japanese
+    - golang.org/x/text/encoding/korean
+    - golang.org/x/text/encoding/simplifiedchinese
+    - golang.org/x/text/encoding/traditionalchinese
+    - golang.org/x/text/encoding/unicode
+    - golang.org/x/text/internal/gen
+    golang.org/x/text/encoding/internal:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/internal/enctest:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/internal/identifier:
+    - golang.org/x/text/internal/gen
+    golang.org/x/text/encoding/japanese:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/korean:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/simplifiedchinese:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/traditionalchinese:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/unicode:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/internal/utf8internal
+    - golang.org/x/text/runes
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/unicode/utf32:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/transform
+    golang.org/x/text/feature/plural:
+    - golang.org/x/text/internal
+    - golang.org/x/text/internal/catmsg
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/number
+    - golang.org/x/text/language
+    - golang.org/x/text/message/catalog
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/internal:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/internal/catmsg:
+    - golang.org/x/text/language
+    golang.org/x/text/internal/cldrtree:
+    - golang.org/x/text/internal
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/internal/colltab:
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/norm
+    golang.org/x/text/internal/export/idna:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/triegen
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/secure/bidirule
+    - golang.org/x/text/unicode/bidi
+    - golang.org/x/text/unicode/norm
+    golang.org/x/text/internal/format:
+    - golang.org/x/text/language
+    golang.org/x/text/internal/gen:
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/internal/number:
+    - golang.org/x/text/internal
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/number
+    - golang.org/x/text/internal/stringset
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/internal/testtext:
+    - golang.org/x/text/internal/gen
+    golang.org/x/text/language:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/tag
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/language/display:
+    - golang.org/x/text/internal/format
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/message:
+    - golang.org/x/text/feature/plural
+    - golang.org/x/text/internal/format
+    - golang.org/x/text/internal/number
+    - golang.org/x/text/language
+    - golang.org/x/text/message/catalog
+    golang.org/x/text/message/catalog:
+    - golang.org/x/text/internal
+    - golang.org/x/text/internal/catmsg
+    - golang.org/x/text/language
+    golang.org/x/text/message/pipeline:
+    - golang.org/x/text/collate
+    - golang.org/x/text/feature/plural
+    - golang.org/x/text/internal
+    - golang.org/x/text/internal/catmsg
+    - golang.org/x/text/internal/format
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    - golang.org/x/tools/go/loader
+    golang.org/x/text/number:
+    - golang.org/x/text/feature/plural
+    - golang.org/x/text/internal/format
+    - golang.org/x/text/internal/number
+    - golang.org/x/text/language
+    golang.org/x/text/runes:
+    - golang.org/x/text/transform
+    golang.org/x/text/search:
+    - golang.org/x/text/internal/colltab
+    - golang.org/x/text/language
+    golang.org/x/text/secure/bidirule:
+    - golang.org/x/text/transform
+    - golang.org/x/text/unicode/bidi
+    golang.org/x/text/secure/precis:
+    - golang.org/x/text/cases
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/triegen
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/language
+    - golang.org/x/text/runes
+    - golang.org/x/text/secure/bidirule
+    - golang.org/x/text/transform
+    - golang.org/x/text/unicode/norm
+    - golang.org/x/text/unicode/rangetable
+    - golang.org/x/text/width
+    golang.org/x/text/unicode/bidi:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/triegen
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/unicode/rangetable
+    golang.org/x/text/unicode/cldr:
+    - golang.org/x/text/internal/gen
+    golang.org/x/text/unicode/norm:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/triegen
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/transform
+    golang.org/x/text/unicode/rangetable:
+    - golang.org/x/text/collate
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/rangetable
+    golang.org/x/text/unicode/runenames:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/ucd
+    golang.org/x/text/width:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/triegen
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/transform
+  testImports:
+    golang.org/x/text/cases:
+    - golang.org/x/text/cases
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/language
+    - golang.org/x/text/transform
+    - golang.org/x/text/unicode/norm
+    - golang.org/x/text/unicode/rangetable
+    golang.org/x/text/collate:
+    - golang.org/x/text/collate
+    - golang.org/x/text/collate/build
+    - golang.org/x/text/internal/colltab
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/norm
+    golang.org/x/text/collate/build:
+    - golang.org/x/text/internal/colltab
+    golang.org/x/text/currency:
+    - golang.org/x/text/currency
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/language
+    - golang.org/x/text/message
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/date:
+    - golang.org/x/text/internal/cldrtree
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/encoding:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/charmap
+    - golang.org/x/text/encoding/unicode
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/charmap:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/enctest
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/htmlindex:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/charmap
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/encoding/unicode
+    - golang.org/x/text/language
+    golang.org/x/text/encoding/ianaindex:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/charmap
+    - golang.org/x/text/encoding/ianaindex
+    - golang.org/x/text/encoding/internal/identifier
+    - golang.org/x/text/encoding/japanese
+    - golang.org/x/text/encoding/korean
+    - golang.org/x/text/encoding/simplifiedchinese
+    - golang.org/x/text/encoding/traditionalchinese
+    - golang.org/x/text/encoding/unicode
+    golang.org/x/text/encoding/japanese:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/enctest
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/korean:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/enctest
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/simplifiedchinese:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/enctest
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/traditionalchinese:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal
+    - golang.org/x/text/encoding/internal/enctest
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/unicode:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/charmap
+    - golang.org/x/text/encoding/internal/enctest
+    - golang.org/x/text/transform
+    golang.org/x/text/encoding/unicode/utf32:
+    - golang.org/x/text/encoding
+    - golang.org/x/text/encoding/internal/enctest
+    - golang.org/x/text/transform
+    golang.org/x/text/feature/plural:
+    - golang.org/x/text/feature/plural
+    - golang.org/x/text/internal/catmsg
+    - golang.org/x/text/language
+    - golang.org/x/text/message
+    - golang.org/x/text/message/catalog
+    golang.org/x/text/internal:
+    - golang.org/x/text/language
+    golang.org/x/text/internal/catmsg:
+    - golang.org/x/text/language
+    golang.org/x/text/internal/cldrtree:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/internal/colltab:
+    - golang.org/x/text/collate
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/rangetable
+    golang.org/x/text/internal/export/idna:
+    - golang.org/x/text/internal/export/idna
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/internal/ucd
+    golang.org/x/text/internal/number:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/language
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/internal/triegen:
+    - golang.org/x/text/internal/triegen
+    golang.org/x/text/internal/ucd:
+    - golang.org/x/text/internal/ucd
+    golang.org/x/text/language:
+    - golang.org/x/text/internal/tag
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/language
+    golang.org/x/text/language/display:
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/language
+    - golang.org/x/text/language/display
+    - golang.org/x/text/message
+    golang.org/x/text/message:
+    - golang.org/x/text/internal
+    - golang.org/x/text/internal/format
+    - golang.org/x/text/language
+    - golang.org/x/text/message
+    - golang.org/x/text/message/catalog
+    golang.org/x/text/message/catalog:
+    - golang.org/x/text/internal/catmsg
+    - golang.org/x/text/language
+    golang.org/x/text/number:
+    - golang.org/x/text/feature/plural
+    - golang.org/x/text/language
+    - golang.org/x/text/message
+    - golang.org/x/text/number
+    golang.org/x/text/runes:
+    - golang.org/x/text/cases
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/language
+    - golang.org/x/text/runes
+    - golang.org/x/text/transform
+    - golang.org/x/text/unicode/norm
+    - golang.org/x/text/width
+    golang.org/x/text/search:
+    - golang.org/x/text/language
+    golang.org/x/text/secure/bidirule:
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/transform
+    - golang.org/x/text/unicode/bidi
+    golang.org/x/text/secure/precis:
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/runes
+    - golang.org/x/text/secure/bidirule
+    - golang.org/x/text/transform
+    - golang.org/x/text/unicode/rangetable
+    golang.org/x/text/transform:
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/transform
+    - golang.org/x/text/unicode/norm
+    golang.org/x/text/unicode/bidi:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/unicode/norm
+    - golang.org/x/text/unicode/rangetable
+    golang.org/x/text/unicode/cldr:
+    - golang.org/x/text/unicode/cldr
+    golang.org/x/text/unicode/norm:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/transform
+    - golang.org/x/text/unicode/norm
+    golang.org/x/text/unicode/runenames:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/unicode/runenames
+    golang.org/x/text/width:
+    - golang.org/x/text/internal/gen
+    - golang.org/x/text/internal/testtext
+    - golang.org/x/text/internal/ucd
+    - golang.org/x/text/transform
+    - golang.org/x/text/width
+- name: gopkg.in/src-d/go-billy.v4
+  root: gopkg.in/src-d/go-billy.v4
+  repo: https://gopkg.in/src-d/go-billy.v4
+  version: 982626487c60a5252e7d0b695ca23fb0fa2fd670
+  revision: 4.3.0
+  ref: tags/v4.3.0
+  time: 2018-09-19T12:02:40+02:00
+  noRequirements: true
+  exports:
+  - gopkg.in/src-d/go-billy.v4
+  - gopkg.in/src-d/go-billy.v4/helper/chroot
+  - gopkg.in/src-d/go-billy.v4/helper/mount
+  - gopkg.in/src-d/go-billy.v4/helper/polyfill
+  - gopkg.in/src-d/go-billy.v4/helper/temporal
+  - gopkg.in/src-d/go-billy.v4/memfs
+  - gopkg.in/src-d/go-billy.v4/osfs
+  - gopkg.in/src-d/go-billy.v4/test
+  - gopkg.in/src-d/go-billy.v4/util
+  imports:
+    gopkg.in/src-d/go-billy.v4/helper/chroot:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/helper/polyfill
+    gopkg.in/src-d/go-billy.v4/helper/mount:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/helper/polyfill
+    gopkg.in/src-d/go-billy.v4/helper/polyfill:
+    - gopkg.in/src-d/go-billy.v4
+    gopkg.in/src-d/go-billy.v4/helper/temporal:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/util
+    gopkg.in/src-d/go-billy.v4/memfs:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/helper/chroot
+    - gopkg.in/src-d/go-billy.v4/util
+    gopkg.in/src-d/go-billy.v4/osfs:
+    - golang.org/x/sys/windows
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/helper/chroot
+    gopkg.in/src-d/go-billy.v4/test:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/util
+    gopkg.in/src-d/go-billy.v4/util:
+    - gopkg.in/src-d/go-billy.v4
+  testImports:
+    gopkg.in/src-d/go-billy.v4:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/test
+    gopkg.in/src-d/go-billy.v4/helper/chroot:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/test
+    gopkg.in/src-d/go-billy.v4/helper/mount:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/memfs
+    - gopkg.in/src-d/go-billy.v4/test
+    - gopkg.in/src-d/go-billy.v4/util
+    gopkg.in/src-d/go-billy.v4/helper/polyfill:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/test
+    gopkg.in/src-d/go-billy.v4/helper/temporal:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4/memfs
+    - gopkg.in/src-d/go-billy.v4/test
+    gopkg.in/src-d/go-billy.v4/memfs:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/test
+    gopkg.in/src-d/go-billy.v4/osfs:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/test
+    gopkg.in/src-d/go-billy.v4/util:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4/memfs
+    - gopkg.in/src-d/go-billy.v4/util
+- name: gopkg.in/src-d/go-git.v4
+  root: gopkg.in/src-d/go-git.v4
+  repo: https://gopkg.in/src-d/go-git.v4
+  version: d3cec13ac0b195bfb897ed038a08b5130ab9969e
+  revision: 4.7.0
+  ref: tags/v4.7.0
+  time: 2018-09-06T22:05:00+02:00
+  noRequirements: true
+  commands:
+  - gopkg.in/src-d/go-git.v4/_examples/branch
+  - gopkg.in/src-d/go-git.v4/_examples/checkout
+  - gopkg.in/src-d/go-git.v4/_examples/clone
+  - gopkg.in/src-d/go-git.v4/_examples/commit
+  - gopkg.in/src-d/go-git.v4/_examples/context
+  - gopkg.in/src-d/go-git.v4/_examples/custom_http
+  - gopkg.in/src-d/go-git.v4/_examples/log
+  - gopkg.in/src-d/go-git.v4/_examples/open
+  - gopkg.in/src-d/go-git.v4/_examples/progress
+  - gopkg.in/src-d/go-git.v4/_examples/pull
+  - gopkg.in/src-d/go-git.v4/_examples/push
+  - gopkg.in/src-d/go-git.v4/_examples/remotes
+  - gopkg.in/src-d/go-git.v4/_examples/revision
+  - gopkg.in/src-d/go-git.v4/_examples/showcase
+  - gopkg.in/src-d/go-git.v4/_examples/tag
+  - gopkg.in/src-d/go-git.v4/cli/go-git
+  exports:
+  - gopkg.in/src-d/go-git.v4
+  - gopkg.in/src-d/go-git.v4/_examples
+  - gopkg.in/src-d/go-git.v4/config
+  - gopkg.in/src-d/go-git.v4/internal/revision
+  - gopkg.in/src-d/go-git.v4/plumbing
+  - gopkg.in/src-d/go-git.v4/plumbing/cache
+  - gopkg.in/src-d/go-git.v4/plumbing/filemode
+  - gopkg.in/src-d/go-git.v4/plumbing/format/config
+  - gopkg.in/src-d/go-git.v4/plumbing/format/diff
+  - gopkg.in/src-d/go-git.v4/plumbing/format/gitignore
+  - gopkg.in/src-d/go-git.v4/plumbing/format/idxfile
+  - gopkg.in/src-d/go-git.v4/plumbing/format/index
+  - gopkg.in/src-d/go-git.v4/plumbing/format/objfile
+  - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+  - gopkg.in/src-d/go-git.v4/plumbing/format/pktline
+  - gopkg.in/src-d/go-git.v4/plumbing/object
+  - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp
+  - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+  - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/sideband
+  - gopkg.in/src-d/go-git.v4/plumbing/revlist
+  - gopkg.in/src-d/go-git.v4/plumbing/storer
+  - gopkg.in/src-d/go-git.v4/plumbing/transport
+  - gopkg.in/src-d/go-git.v4/plumbing/transport/client
+  - gopkg.in/src-d/go-git.v4/plumbing/transport/file
+  - gopkg.in/src-d/go-git.v4/plumbing/transport/git
+  - gopkg.in/src-d/go-git.v4/plumbing/transport/http
+  - gopkg.in/src-d/go-git.v4/plumbing/transport/internal/common
+  - gopkg.in/src-d/go-git.v4/plumbing/transport/server
+  - gopkg.in/src-d/go-git.v4/plumbing/transport/ssh
+  - gopkg.in/src-d/go-git.v4/plumbing/transport/test
+  - gopkg.in/src-d/go-git.v4/storage
+  - gopkg.in/src-d/go-git.v4/storage/filesystem
+  - gopkg.in/src-d/go-git.v4/storage/filesystem/dotgit
+  - gopkg.in/src-d/go-git.v4/storage/memory
+  - gopkg.in/src-d/go-git.v4/storage/test
+  - gopkg.in/src-d/go-git.v4/utils/binary
+  - gopkg.in/src-d/go-git.v4/utils/diff
+  - gopkg.in/src-d/go-git.v4/utils/ioutil
+  - gopkg.in/src-d/go-git.v4/utils/merkletrie
+  - gopkg.in/src-d/go-git.v4/utils/merkletrie/filesystem
+  - gopkg.in/src-d/go-git.v4/utils/merkletrie/index
+  - gopkg.in/src-d/go-git.v4/utils/merkletrie/internal/frame
+  - gopkg.in/src-d/go-git.v4/utils/merkletrie/internal/fsnoder
+  - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+  imports:
+    gopkg.in/src-d/go-git.v4:
+    - github.com/sergi/go-diff/diffmatchpatch
+    - golang.org/x/crypto/openpgp
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/osfs
+    - gopkg.in/src-d/go-billy.v4/util
+    - gopkg.in/src-d/go-git.v4/config
+    - gopkg.in/src-d/go-git.v4/internal/revision
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    - gopkg.in/src-d/go-git.v4/plumbing/format/gitignore
+    - gopkg.in/src-d/go-git.v4/plumbing/format/index
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    - gopkg.in/src-d/go-git.v4/plumbing/object
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/sideband
+    - gopkg.in/src-d/go-git.v4/plumbing/revlist
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/client
+    - gopkg.in/src-d/go-git.v4/storage
+    - gopkg.in/src-d/go-git.v4/storage/filesystem
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    - gopkg.in/src-d/go-git.v4/utils/diff
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/filesystem
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/index
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/_examples/branch:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/_examples/checkout:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/_examples/clone:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    gopkg.in/src-d/go-git.v4/_examples/commit:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/plumbing/object
+    gopkg.in/src-d/go-git.v4/_examples/context:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    gopkg.in/src-d/go-git.v4/_examples/custom_http:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/client
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/http
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    gopkg.in/src-d/go-git.v4/_examples/log:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/plumbing/object
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    gopkg.in/src-d/go-git.v4/_examples/open:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/plumbing/object
+    gopkg.in/src-d/go-git.v4/_examples/progress:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    gopkg.in/src-d/go-git.v4/_examples/pull:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    gopkg.in/src-d/go-git.v4/_examples/push:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    gopkg.in/src-d/go-git.v4/_examples/remotes:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/config
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    gopkg.in/src-d/go-git.v4/_examples/revision:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/_examples/showcase:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/plumbing/object
+    gopkg.in/src-d/go-git.v4/_examples/tag:
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/_examples
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/object
+    gopkg.in/src-d/go-git.v4/cli/go-git:
+    - github.com/jessevdk/go-flags
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/file
+    gopkg.in/src-d/go-git.v4/config:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/config
+    gopkg.in/src-d/go-git.v4/plumbing/cache:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/plumbing/format/config:
+    - github.com/src-d/gcfg
+    gopkg.in/src-d/go-git.v4/plumbing/format/diff:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    gopkg.in/src-d/go-git.v4/plumbing/format/gitignore:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-git.v4/plumbing/format/config
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/plumbing/format/idxfile:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/utils/binary
+    gopkg.in/src-d/go-git.v4/plumbing/format/index:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    - gopkg.in/src-d/go-git.v4/utils/binary
+    gopkg.in/src-d/go-git.v4/plumbing/format/objfile:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    gopkg.in/src-d/go-git.v4/plumbing/format/packfile:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/cache
+    - gopkg.in/src-d/go-git.v4/plumbing/format/idxfile
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/utils/binary
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/plumbing/object:
+    - github.com/emirpasic/gods/trees/binaryheap
+    - github.com/sergi/go-diff/diffmatchpatch
+    - golang.org/x/crypto/openpgp
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    - gopkg.in/src-d/go-git.v4/plumbing/format/diff
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/utils/binary
+    - gopkg.in/src-d/go-git.v4/utils/diff
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/plumbing/protocol/packp:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/pktline
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/sideband
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/sideband:
+    - gopkg.in/src-d/go-git.v4/plumbing/format/pktline
+    gopkg.in/src-d/go-git.v4/plumbing/revlist:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    - gopkg.in/src-d/go-git.v4/plumbing/object
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    gopkg.in/src-d/go-git.v4/plumbing/storer:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/index
+    gopkg.in/src-d/go-git.v4/plumbing/transport:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+    gopkg.in/src-d/go-git.v4/plumbing/transport/client:
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/file
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/git
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/http
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/ssh
+    gopkg.in/src-d/go-git.v4/plumbing/transport/file:
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/internal/common
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/server
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/plumbing/transport/git:
+    - gopkg.in/src-d/go-git.v4/plumbing/format/pktline
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/internal/common
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/plumbing/transport/http:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/pktline
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/sideband
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/internal/common
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/plumbing/transport/internal/common:
+    - gopkg.in/src-d/go-git.v4/plumbing/format/pktline
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/sideband
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/plumbing/transport/server:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/osfs
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+    - gopkg.in/src-d/go-git.v4/plumbing/revlist
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/storage/filesystem
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/plumbing/transport/ssh:
+    - github.com/kevinburke/ssh_config
+    - github.com/mitchellh/go-homedir
+    - github.com/xanzy/ssh-agent
+    - golang.org/x/crypto/ssh
+    - golang.org/x/crypto/ssh/knownhosts
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/internal/common
+    gopkg.in/src-d/go-git.v4/plumbing/transport/test:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    gopkg.in/src-d/go-git.v4/storage:
+    - gopkg.in/src-d/go-git.v4/config
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    gopkg.in/src-d/go-git.v4/storage/filesystem:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-git.v4/config
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/cache
+    - gopkg.in/src-d/go-git.v4/plumbing/format/idxfile
+    - gopkg.in/src-d/go-git.v4/plumbing/format/index
+    - gopkg.in/src-d/go-git.v4/plumbing/format/objfile
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/storage
+    - gopkg.in/src-d/go-git.v4/storage/filesystem/dotgit
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/storage/filesystem/dotgit:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/osfs
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/idxfile
+    - gopkg.in/src-d/go-git.v4/plumbing/format/objfile
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    - gopkg.in/src-d/go-git.v4/utils/ioutil
+    gopkg.in/src-d/go-git.v4/storage/memory:
+    - gopkg.in/src-d/go-git.v4/config
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/index
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/storage
+    gopkg.in/src-d/go-git.v4/storage/test:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/config
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/index
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/storage
+    gopkg.in/src-d/go-git.v4/utils/binary:
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/utils/diff:
+    - github.com/sergi/go-diff/diffmatchpatch
+    gopkg.in/src-d/go-git.v4/utils/ioutil:
+    - github.com/jbenet/go-context/io
+    gopkg.in/src-d/go-git.v4/utils/merkletrie:
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/internal/frame
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/filesystem:
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/index:
+    - gopkg.in/src-d/go-git.v4/plumbing/format/index
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/internal/frame:
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/internal/fsnoder:
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/noder:
+    - golang.org/x/text/unicode/norm
+  testImports:
+    gopkg.in/src-d/go-git.v4:
+    - golang.org/x/crypto/openpgp
+    - golang.org/x/crypto/openpgp/armor
+    - golang.org/x/crypto/openpgp/errors
+    - golang.org/x/text/unicode/norm
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/memfs
+    - gopkg.in/src-d/go-billy.v4/osfs
+    - gopkg.in/src-d/go-billy.v4/util
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4
+    - gopkg.in/src-d/go-git.v4/config
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    - gopkg.in/src-d/go-git.v4/plumbing/format/gitignore
+    - gopkg.in/src-d/go-git.v4/plumbing/format/index
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    - gopkg.in/src-d/go-git.v4/plumbing/object
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/storage
+    - gopkg.in/src-d/go-git.v4/storage/filesystem
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    gopkg.in/src-d/go-git.v4/config:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/internal/revision:
+    - gopkg.in/check.v1
+    gopkg.in/src-d/go-git.v4/plumbing:
+    - gopkg.in/check.v1
+    gopkg.in/src-d/go-git.v4/plumbing/cache:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/plumbing/filemode:
+    - gopkg.in/check.v1
+    gopkg.in/src-d/go-git.v4/plumbing/format/config:
+    - gopkg.in/check.v1
+    gopkg.in/src-d/go-git.v4/plumbing/format/diff:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    gopkg.in/src-d/go-git.v4/plumbing/format/gitignore:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/memfs
+    gopkg.in/src-d/go-git.v4/plumbing/format/idxfile:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/idxfile
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    gopkg.in/src-d/go-git.v4/plumbing/format/index:
+    - github.com/google/go-cmp/cmp
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    gopkg.in/src-d/go-git.v4/plumbing/format/objfile:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/plumbing/format/packfile:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4/memfs
+    - gopkg.in/src-d/go-billy.v4/osfs
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/idxfile
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/storage/filesystem
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    gopkg.in/src-d/go-git.v4/plumbing/format/pktline:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing/format/pktline
+    gopkg.in/src-d/go-git.v4/plumbing/object:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/filemode
+    - gopkg.in/src-d/go-git.v4/plumbing/format/diff
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/storage/filesystem
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/plumbing/protocol/packp:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/pktline
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+    gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability:
+    - gopkg.in/check.v1
+    gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/sideband:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing/format/pktline
+    gopkg.in/src-d/go-git.v4/plumbing/revlist:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/object
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/storage/filesystem
+    gopkg.in/src-d/go-git.v4/plumbing/storer:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/plumbing/transport:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp/capability
+    gopkg.in/src-d/go-git.v4/plumbing/transport/client:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/client
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/http
+    gopkg.in/src-d/go-git.v4/plumbing/transport/file:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/test
+    gopkg.in/src-d/go-git.v4/plumbing/transport/git:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/test
+    gopkg.in/src-d/go-git.v4/plumbing/transport/http:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/protocol/packp
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/test
+    gopkg.in/src-d/go-git.v4/plumbing/transport/internal/common:
+    - gopkg.in/check.v1
+    gopkg.in/src-d/go-git.v4/plumbing/transport/server:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/client
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/server
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/test
+    - gopkg.in/src-d/go-git.v4/storage/filesystem
+    - gopkg.in/src-d/go-git.v4/storage/memory
+    gopkg.in/src-d/go-git.v4/plumbing/transport/ssh:
+    - github.com/gliderlabs/ssh
+    - github.com/kevinburke/ssh_config
+    - golang.org/x/crypto/ssh
+    - golang.org/x/crypto/ssh/testdata
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing/transport
+    - gopkg.in/src-d/go-git.v4/plumbing/transport/test
+    gopkg.in/src-d/go-git.v4/storage/filesystem:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4/memfs
+    - gopkg.in/src-d/go-billy.v4/osfs
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/config
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/storer
+    - gopkg.in/src-d/go-git.v4/storage/filesystem/dotgit
+    - gopkg.in/src-d/go-git.v4/storage/test
+    gopkg.in/src-d/go-git.v4/storage/filesystem/dotgit:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/osfs
+    - gopkg.in/src-d/go-git-fixtures.v3
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/idxfile
+    - gopkg.in/src-d/go-git.v4/plumbing/format/packfile
+    gopkg.in/src-d/go-git.v4/storage/memory:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/storage/test
+    gopkg.in/src-d/go-git.v4/utils/binary:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing
+    gopkg.in/src-d/go-git.v4/utils/diff:
+    - github.com/sergi/go-diff/diffmatchpatch
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/utils/diff
+    gopkg.in/src-d/go-git.v4/utils/ioutil:
+    - gopkg.in/check.v1
+    gopkg.in/src-d/go-git.v4/utils/merkletrie:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/internal/fsnoder
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/filesystem:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-billy.v4
+    - gopkg.in/src-d/go-billy.v4/memfs
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/index:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/plumbing
+    - gopkg.in/src-d/go-git.v4/plumbing/format/index
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/internal/frame:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/internal/fsnoder
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/internal/fsnoder:
+    - gopkg.in/check.v1
+    - gopkg.in/src-d/go-git.v4/utils/merkletrie/noder
+    gopkg.in/src-d/go-git.v4/utils/merkletrie/noder:
+    - golang.org/x/text/unicode/norm
+    - gopkg.in/check.v1
+- name: gopkg.in/warnings.v0
+  root: gopkg.in/warnings.v0
+  repo: https://gopkg.in/warnings.v0
+  version: ec4a0fea49c7b46c2aeb0b51aac55779c607e52b
+  revision: 0.1.2
+  ref: tags/v0.1.2
+  time: 2017-11-15T20:30:34+01:00
+  noRequirements: true
+  exports:
+  - gopkg.in/warnings.v0
+  testImports:
+    gopkg.in/warnings.v0:
+    - gopkg.in/warnings.v0
+- name: gopkg.in/yaml.v2
+  root: gopkg.in/yaml.v2
+  repo: https://gopkg.in/yaml.v2
+  version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
+  revision: 2.2.1
+  ref: tags/v2.2.1
+  time: 2018-03-28T16:50:20-03:00
+  noRequirements: true
+  exports:
+  - gopkg.in/yaml.v2
+  testImports:
+    gopkg.in/yaml.v2:
+    - gopkg.in/check.v1
+    - gopkg.in/yaml.v2
