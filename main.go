@@ -41,7 +41,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/uber/gg/internal/gg"
+	"github.com/uber-archive/gg/internal/gg"
 )
 
 func main() {
